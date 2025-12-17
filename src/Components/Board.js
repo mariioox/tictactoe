@@ -14,13 +14,7 @@ function Board({ board, setBoard, currentPlayer, setCurrentPlayer }) {
     setBoard(newBoard);
 
     // Toggle current player
-    setCurrentPlayer = () => {
-      if (currentPlayer === "X") {
-        currentPlayer = "O";
-      } else {
-        currentPlayer = "X";
-      }
-    };
+    setCurrentPlayer(currentPlayer === "X" ? "O" : "X");
   };
 
   return (

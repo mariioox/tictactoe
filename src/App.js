@@ -12,7 +12,12 @@ function App() {
   return (
     <div className="App">
       <h1>Tic tac toe</h1>
-      <Board />
+      <Board
+        board={board}
+        setBoard={setBoard}
+        currentPlayer={currentPlayer}
+        setCurrentPlayer={setCurrentPlayer}
+      />
     </div>
   );
 }
