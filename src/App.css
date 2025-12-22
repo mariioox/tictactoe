@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
@@ -13,21 +14,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +21,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  gap: 1px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tile {
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.status {
+  margin: 10px 0;
+}
+
+.reset {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
 }
